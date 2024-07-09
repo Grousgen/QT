@@ -10,7 +10,7 @@ Widget::Widget(QWidget *parent)
     ui->setupUi(this);
     timerUpdate();
     QTimer *timer = new QTimer(this);
-
+    //add a timer
     connect(timer,&QTimer::timeout,this,&Widget::timerUpdate);
     timer->start(1000);
 }
